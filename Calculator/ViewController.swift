@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         }
         isInTheMiddleOfTyping = true
     }
+    @IBAction private func dotPressed(sender: UIButton) {
+        let textCurrentlyInDisplay = displayLabel.text!
+        displayLabel.text = textCurrentlyInDisplay + "."
+        isInTheMiddleOfTyping = true
+    }
     
     private var displayValue : Double {
         get {
